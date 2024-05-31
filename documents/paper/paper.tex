@@ -7,6 +7,8 @@
 \usepackage{csquotes}
 \usepackage[a4paper]{geometry}
 
+\usepackage{graphicx}
+
 \usepackage[
     backend=biber,
     style=apa,
@@ -24,14 +26,46 @@
 \addbibresource{../references/bibliography.bib}
 
 
-\title{Ethik im Umgang mit Daten}
+\title{Ethik im Umgang mit Daten in bezug auf Künstliche Intelligenz}
 \author{Stefani Anastasova}
-\date{\today}
+\date{31.05.2024}
+
+
 
 
 \begin{document}
 
-\maketitle
+% Hier wird die Titelseite gestaltet.
+\begin{titlepage}
+    \makeatletter % Das hier brauchen wir damit wir spezielle Befehle wie \@author verwenden können.
+	\begin{center}
+		{\scshape Gymnasium Muttenz} \vspace{0.5cm}
+
+		 Informatik 2023/2024\vspace{5.5cm}
+
+		{\huge\bfseries \@title}
+
+        \vspace{1cm}
+
+        \begin{figure}[h]
+            \centering 
+            \includegraphics[width=0.5\textwidth]{KI.png}
+            %\caption{Ein erstes Bild}
+            %\label{fig:meme}
+            \end{figure}
+
+		\vspace{1cm}
+
+		{\Large\itshape \@author}
+
+        \vspace{1cm}
+
+        Version vom: \@date
+	\end{center}
+    
+    \makeatother % Wir müssen das @ wieder schliessen, damit der Rest ganz normal funktioniert.
+\end{titlepage}
+
 
 \abstract{
     In meiner Arbeit habe ich mich mit dem Thema Daten und Ethik in bezug auf Chatgpt, ein Sprachmodell von OpenAI befasst.
@@ -102,17 +136,22 @@ Während einer interaktion mit dem Chatbot, können Nutzer also unbeabsichtigt s
 
 
 \section{Wie kann man also sicherstellen, dass dieses KI system den persönlichen Datenschutz respektiert?}
-Um sicherzustellen das diese KI den persönlichen Datenschutz respektiert kann man Massnahmen Unternehmen
-Durch die Einfuehrung von Massnahmen für die Sicherheit des Datenschutz.
-Es gibt also Datenschutzbestimmungen welche darauf ausgerichtet sind die Privatsphäre der Nutzer zu schützen.
+Um sicherzustellen das diese KI den persönlichen Datenschutz respektiert kann man Massnahmen Unternehmen.
+Es gibt also Datenschutzbestimmungen welche darauf ausgerichtet sind die Privatsphäre der Nutzer zu schützen. 
 1. Einwilligung: Bevor eine Einwilligung eingegangen wird, müssen sich die Nutzer bewusst sein, das die KI ihre daten verarbeitet.
 Die Einwilligung sollte freiwillig, klar und spezifisch sein.
 2.Transparenz: Es ist wichtig, dass KI-Systeme klar kommunizieren, welche Daten sie erheben, wie sie diese nutzen und wie lange sie sie lagern. Benutzer sollen Zugriff auf Daten-
 verarbeitungssinformationen haben.
-3.Zweckbindung: Die erhobenen Daten dürfen nur zu dem angegebenen Zweck genutzt werden, für den sie erhoben wurden, und nicht zu anderen Zwecken, sofern keine erneute Zustimmung vorliegt.
+3.Zweckbindung: Die erhobenen Daten dürfen nur zu dem angegebenen Zweck genutzt werden, für den sie erhoben wurden, und nicht zu anderen Zwecken, sofern keine erneute Zustimmung vorliegt.\\
+
 4.Datensicherheit: Um die gespeicherten Daten vor unbefugtem Zugriff, Verlust oder Diebstahl zu schützen, sind KI-Systeme mit geeigneten Sicherheitsvorkehrungen verpflichtet.
 Die Rechte der Nutzer umfassen den Zugang zu ihren gespeicherten Daten, die Korrektur, das Löschen oder die Einschränkung ihrer Verarbeitung.
 
+\section{Fazit}
+Künstliche Intelligenz ist äußerst faszinierend und hat die Fähigkeit, unser Leben in zahlreichen Bereichen zu deutlich zu vereinfachen.
+Es ist von Bedeutung, dass KI-Systeme den Schutz unserer persönlichen Daten gewährleisten und diese schützen.
+Man muss sicherstellen, dass ausschließlich die erforderlichen Informationen gesammelt und verarbeitet werden. Es ist wichtig, dass die Daten anonymisiert werden, damit niemand in der Lage ist, unsere persönlichen Daten zu erfahren. Wir sollten auch stets darüber informiert sein, welche Daten erhoben und für welche Zwecke sie genutzt werden.
+Gesetze und Vorschriften tragen dazu bei, den Datenschutz zu gewährleisten.
 
 
 
