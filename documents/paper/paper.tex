@@ -7,6 +7,8 @@
 \usepackage{csquotes}
 \usepackage[a4paper]{geometry}
 
+\usepackage{graphicx}
+
 \usepackage[
     backend=biber,
     style=apa,
@@ -24,35 +26,130 @@
 \addbibresource{../references/bibliography.bib}
 
 
-\title{Ethik im Umgang mit Daten}
-\author{Name des Autors}
-\date{\today}
+\title{Ethik im Umgang mit Daten in bezug auf Künstliche Intelligenz}
+\author{Stefani Anastasova}
+\date{31.05.2024}
+
+
 
 
 \begin{document}
 
-\maketitle
+% Hier wird die Titelseite gestaltet.
+\begin{titlepage}
+    \makeatletter % Das hier brauchen wir damit wir spezielle Befehle wie \@author verwenden können.
+	\begin{center}
+		{\scshape Gymnasium Muttenz} \vspace{0.5cm}
+
+		 Informatik 2023/2024\vspace{5.5cm}
+
+		{\huge\bfseries \@title}
+
+        \vspace{1cm}
+
+        \begin{figure}[h]
+            \centering 
+            \includegraphics[width=0.5\textwidth]{KI.png}
+            %\caption{Ein erstes Bild}
+            %\label{fig:meme}
+            \end{figure}
+
+		\vspace{1cm}
+
+		{\Large\itshape \@author}
+
+        \vspace{1cm}
+
+        Version vom: \@date
+	\end{center}
+    
+    \makeatother % Wir müssen das @ wieder schliessen, damit der Rest ganz normal funktioniert.
+\end{titlepage}
+
 
 \abstract{
-    Dies ist eine Vorlage für eine Maturarbeit in der Informatik am Gymnasium Muttenz. Sie dient dazu, die Arbeit schnell und einfach zu starten und sollte einen guten Überblick über die Arbeit bieten.
+    In meiner Arbeit habe ich mich mit dem Thema Daten und Ethik in bezug auf Chatgpt, ein Sprachmodell von OpenAI befasst.
+    Im fokus steht hier die Frage "Wie kann man sicherstellen, dass KI-Systeme den Datenschutz respektieren?". Mein Ziel bei dieser Arbeit bestand darin zu demonstrieren, wie Datenethik in der Praxix genutzt werden kann um die Vorzüge von KI zu nutzen und dabei ihre Risiken zu minimieren.
+
 }
 
 \tableofcontents
-
+\parindent=0pt
 \chapter{Einleitung}
+\section{Was ist KI?}
 
-Hier kommt die Einführung. Der Text hier sollte eigentlich noch viel länger sein, so das hier nicht so merkwürdige Umbrüche entstehen.
+KI (künstliche Intelligenz) bzw. auch Artificial Intelligence AI ist ein Teilgebiet in der Informatik und gilt als «Zukunftsweisende Technologie» Diese Intelligenz besitzt durch das Training die Kompetenzen, menschliche Fähigkeiten Maschinell nachzuahmen. Die KI ist für die meisten von uns in dieser kurzen Zeit ein nützliches Werkzeug im Alltag geworden. Aber wie funktioniert bzw. wird diese Intelligenz trainiert? 
+Eine KI lernt nicht nur befehle auszuführen, sondern auch eigenständig Probleme zu lösen, um dieses Training erfolgreich zu absolvieren.
+Es gibt zwei Hauptarten eine KI zu trainieren nämlich:  
+Überwachtes Lernen
+Dieses «Lernen» basiert auf neuronalen Netzen. Hierbei wird die KI durch Trainingsdaten, welche schon bekannt sind, trainiert. Man möchte also der KI beibringen aus diesen Daten Muster abzuleiten.
+Typische Anwendungsfälle für das überwachte lernen sind Spracherkennungen, Bilderkennungen oder auch Gesichtserkennungen.
+Unüberwachtes Lernen
+Beim unüberwachtem lernen sind die Daten ohne Label angegeben, das bedeutet die KI muss selber versuchen die Strukturen und Muster in den gegebenen Daten zu erkennen. 
+Es wird genutzt, um Daten einzuteilen. Anders als beim überwachten Lernen kommt das unüberwachte Lernen bei statischen Verfahren zum Einsatz. 
+Ein Beispiel wären hier die Algorithmen, die beispielsweise das Segmentieren von Kunden anhand von ihrem Kaufverhalten. 
+\section{die Trainingsschritte}
+Die Trainingsschritte
+Damit eine KI verwendet werden kann, muss diese zuerst lernen. Dies passiert in diesen drei folgenden Schritten.
+Das Training
+Im ersten Schritt wird die KI mit verschiedenen Daten zugeführt. Sobald der Computer diese Daten erhält, kann er lernen bzw. trainiert werden. Mit diesen Datenmengen wird sie trainiert und kann so Gesichter, Stimmen und auch Bilder erkennen.
 
-Ich kann weitere Kapitel auch importieren.
+Validierung 
+In diesem Schritt wird überprüft, wie gut der Algorithmus trainiert ist indem man ihm Daten gibt, denen er noch nie begegnet ist. Dies hilft bei der Anpassung der KI. 
+Die KI lernt also so lange weiter, bis keine Verbesserungen mehr erreicht werden können. 
 
-\input{chap_methode.tex}
+Testen 
+Im letzten Schritt wird die KI schlussendlich getestet und wenn nötig überarbeitet.
+Damit diese Tests erfolgreich sind, muss die KI bestimmte Kriterien erfüllen wie die Qualität der Daten -> Die Daten müssen genau und relevant sein.
+Wenn diese Schritte erfolgreich absolviert wurden, ist die KI startklar. 
 
-\section{Etwas mit Quellen}
+\chapter{Die KI im Bezug auf Daten und Ethik}
+\section{Meine Fragestellung}
+Suchmaschinen, Empfehlungsalgorithmen, Sprachaassistenten, heutzutage ist die KI fast überall erhalten und beeinflusst uns sogar unbewusst, denn diese hat sich schnell entwickelt und verbreitet. 
+Sie kann uns durch die Daten helfen, jedoch stellt sich hier auch die Frage wie viel Wer wird auf Datenschutz gelegt? 
+Somit ergibt sich die Fragestellung "Wie kann man sicherstellen, dass KI-Systeme den Datenschutz respektieren?"
+Bei meiner Fragestellung beziehe ich much auf ein spezifischeres KI tool nämlich Chatgpt. 
 
-Etwas mit Änderung hier am Ende.
+\section {Beispiele Chatgpt, wie sicher ist die Ki}
+Chatgpt: "ChatGPT hat einen Raketenstart hingelegt. Mittlerweile wird das KI-Tool weltweit genutzt – vom Schüler bis hin zum Firmen-Boss. " zitiert
+    Das KI tool kann bei verschiedenen Fragen und Themen benutzt werden, denn es ist darauf spezialisiert auf menschliche anfragen zu reagieren und darauf Antworten zu geben. 
+    Es kann aber auch in vielen weiteren Bereichen verwendet.
+    Die KI Chatgpt kann nahezu auf alles reagieren und antworten nachdem man sie fragt. 
 
-Wenn ich eine Quelle zitieren möchte, kann ich das ganze einfach am Ende des Satzes machen \citep{example}. Oder wie \citet{example} sagt, auch mitten im Text.
+    \subsection{Wie sicher sind Gespräche?}
+    Grundsätzlich sind die Interaktionen in Chatgpt sicher, jedoch nur wenn man keine privaten Informationen weitergibt. Ausserdem sind diese Gespräche nicht vertraulich, da die KI diese Daten verwendet.
+    Im allgemeinem setzt sich das Unternehmen von Chatgpt OpenAI aber für die Sicherheitsmassnahmen ein.
+    Der Chatverlauf wird gespeichert welcher der KI beim Traing behilflich sein kann.
+    Welche Daten werden verarbeitet? 
+    Für die Nutzung des Chatbots wird eine persönliche Registrierung benötigt, das bedeutet E-Mail-Adresse, Name, Mobilnummer, Geburtsdatum und optional auch Kreditkartendaten als die Bezahlmethode für den Kauf von kostenpflichtigen Diensten.
+\section{Wie viel Wert wird auf Datenschutz gelegt?}
+    Der Chatbot speichert die personenbezogenen Daten um diesen zu verbessern und weiterhin zu trainieren, wobei die Organisation OpenAI zugibt gewisse Daten mit Partnern zu teilen, wenn dies dem Chatbot zur Verbesserung hilft.
+    Obwohl die KI die Daten für einen bestimmten Zweck erfasst, wird empfohlen keine persönlichen Daten im chat preiszugeben.
 
-\printbibliography
+\section{Datenschutzherausforderungen bei Chatgpt}
+1. Unabsichtliche Offenlegung der persönlichen Informationen und Zugriffe von Privatpersonen
+Um besser zu werden greift das KI Tool auf millionen von Daten im Internet zu und nutzt so unbewusst auch Benutzereingaben von Privatpersonen und aber auch von Unternehnem.
+So kann man nicht aussschliessen, dass persönliche und sensible Informationen verarbeitet werden.
+Während einer interaktion mit dem Chatbot, können Nutzer also unbeabsichtigt sensible, persönliche Infos teilen, welche dann von Chatgpt verarbeite und genutzt werden. 
+
+
+\section{Wie kann man also sicherstellen, dass dieses KI system den persönlichen Datenschutz respektiert?}
+Um sicherzustellen das diese KI den persönlichen Datenschutz respektiert kann man Massnahmen Unternehmen.
+Es gibt also Datenschutzbestimmungen welche darauf ausgerichtet sind die Privatsphäre der Nutzer zu schützen. 
+1. Einwilligung: Bevor eine Einwilligung eingegangen wird, müssen sich die Nutzer bewusst sein, das die KI ihre daten verarbeitet.
+Die Einwilligung sollte freiwillig, klar und spezifisch sein.
+2.Transparenz: Es ist wichtig, dass KI-Systeme klar kommunizieren, welche Daten sie erheben, wie sie diese nutzen und wie lange sie sie lagern. Benutzer sollen Zugriff auf Daten-
+verarbeitungssinformationen haben.
+3.Zweckbindung: Die erhobenen Daten dürfen nur zu dem angegebenen Zweck genutzt werden, für den sie erhoben wurden, und nicht zu anderen Zwecken, sofern keine erneute Zustimmung vorliegt.\\
+
+4.Datensicherheit: Um die gespeicherten Daten vor unbefugtem Zugriff, Verlust oder Diebstahl zu schützen, sind KI-Systeme mit geeigneten Sicherheitsvorkehrungen verpflichtet.
+Die Rechte der Nutzer umfassen den Zugang zu ihren gespeicherten Daten, die Korrektur, das Löschen oder die Einschränkung ihrer Verarbeitung.
+
+\section{Fazit}
+Künstliche Intelligenz ist äußerst faszinierend und hat die Fähigkeit, unser Leben in zahlreichen Bereichen zu deutlich zu vereinfachen.
+Es ist von Bedeutung, dass KI-Systeme den Schutz unserer persönlichen Daten gewährleisten und diese schützen.
+Man muss sicherstellen, dass ausschließlich die erforderlichen Informationen gesammelt und verarbeitet werden. Es ist wichtig, dass die Daten anonymisiert werden, damit niemand in der Lage ist, unsere persönlichen Daten zu erfahren. Wir sollten auch stets darüber informiert sein, welche Daten erhoben und für welche Zwecke sie genutzt werden.
+Gesetze und Vorschriften tragen dazu bei, den Datenschutz zu gewährleisten.
 
 \end{document}
+
